@@ -31,7 +31,7 @@ const Register = () => {
     try {
       // ✅ Await axios call
       const res = await axios.post(
-        mybaseUrl+'auth/register/',
+        mybaseUrl+'api/.auth/register/',
         { ...form },
         { headers: { 'Content-Type': 'application/json' } }
       );
