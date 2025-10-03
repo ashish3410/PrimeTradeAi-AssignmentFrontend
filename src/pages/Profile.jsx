@@ -5,7 +5,7 @@ export default function ProfileModal({ onClose }) {
     const mybaseUrl = isDevelopment ? import.meta.env.VITE_API_BASE_URL_LOCAL : import.meta.env.VITE_API_BASE_URL_DEPLOY;
     const [user, setUser] = useState({})
     const token = localStorage.getItem('token')
-    let getprofileurl=mybaseUrl+'auth/profile'
+    let getprofileurl=mybaseUrl+'api/auth/profile'
     console.log(getprofileurl);
     useEffect(() => {
         const fetchProfile = async () => {
