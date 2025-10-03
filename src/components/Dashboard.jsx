@@ -25,7 +25,7 @@ const Dashboard = ({ onOpenProfile }) => {
 
   console.log(mybaseUrl);
   const axiosInstance = axios.create({
-    baseURL: mybaseUrl,
+    baseURL: mybaseUrl+'api/',
     headers: {
       Authorization: `Bearer ${token}`,
     },
