@@ -1,0 +1,8 @@
+static_sites:
+  - name: primeTradeAsgn
+    buildCommand: npm run build
+    publishPath: dist
+    redirects:
+      - source: /*
+        destination: /index.html
+        statusCode: 200
